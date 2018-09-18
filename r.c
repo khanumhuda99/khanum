@@ -1,14 +1,14 @@
 
 #include <stdio.h>
-int rev(long int n)
+ long int rev(long int n)
 {
-     if(n==0)
+     if(n<=9)
      return 1;
      return 1+rev(n/10);
 }
 int main()
 {
-    printf("%ld",rev(23));
+    printf("%ld",rev(0));
 
 }
 
